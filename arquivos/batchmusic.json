@@ -1,0 +1,45 @@
+{
+    "Musica": [
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artista": {"S": "Red Hot Chilli Peppers"},
+                  "TituloMusica": {"S": "Bag of Grins"},
+                  "TituloAlbum": {"S": "Return of the Dream Canteen"},
+                  "AnoMusica": {"S": "2022"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artista": {"S": "The Cure"},
+                  "TituloMusica": {"S": "Just Like Heaven"},
+                  "TituloAlbum": {"S": "Kiss Me, Kiss Me, Kiss Me"},
+                  "AnoMusica": {"S": "1987"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                  "Artista": {"S": "Red Hot Chilli Peppers"},
+                  "TituloMusica": {"S": "Scar Tissue"},
+                  "TituloAlbum": {"S": "Californication"},
+                  "AnoMusica": {"S": "1999"}
+                }
+            }
+        },
+        {
+          "PutRequest": {
+              "Item": {
+                "Artista": {"S": "Vanguart"},
+                "TituloMusica": {"S": "Demorou Pra Ser"},
+                "TituloAlbum": {"S": "Muito Mais Que O Amor"},
+                "AnoMusica": {"S": "2013"},
+                "MusicaBrasileira": {"S": "Sim"}
+              }
+          }
+      }
+      ]
+}
