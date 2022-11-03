@@ -14,7 +14,8 @@ Projeto desenvolvido com o objetivo de construir um banco de dados não relacion
 aws dynamodb create-table `
 	--table-name Musica `
 	--attribute-definitions
-		AttributeName=Artista,AttributeType=S 				   		   AttributeName=TituloMusica,AttributeType=S  `
+		AttributeName=Artista,AttributeType=S
+		AttributeName=TituloMusica,AttributeType=S  `
 	--key-schema 
 		AttributeName=Artista,KeyType=HASH
 		AttributeName=TituloMusica,KeyType=RANGE `
