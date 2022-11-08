@@ -41,12 +41,11 @@ aws dynamodb batch-write-item `
 - Criando um index global secundário baseado no título do álbum
 
 ```
-aws dynamodb update-table `
-    --table-name Musica `
-    --attribute-definitions AttributeName=TituloAlbum,AttributeType=S `
-    --global-secondary-index-updates `
-        "[{\"Create\":{\"IndexName\": \"TituloAlbum-index\",\"KeySchema\":[{\"AttributeName\":\"TituloAlbum\",\"KeyType\":\"HASH\"}], \
-        \"ProvisionedThroughput\": {\"ReadCapacityUnits\": 10, \"WriteCapacityUnits\": 5      },\"Projection\":{\"ProjectionType\":\"ALL\"}}}]"
+O índice foi criado diretamente na interface da Amazon DynamoDB:
+
+DynamoDB -> Tables -> Seleciona tabela "Musica" -> Indexes -> Create index
+
+Partition key -> "TituloAlbum (String)" -> Index name -> "TituloAlbum-index" -> Create index
 ```
 
 - Pesquisando item por artista
